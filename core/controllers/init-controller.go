@@ -1,4 +1,4 @@
-package controller
+package controllers
 
 import (
 	"fmt"
@@ -25,6 +25,13 @@ func New() *RestController {
 
 	// TODO Register all the routes here
 	return restController
+}
+
+//
+func RegisterMiddlewere() (registeredMiddleweres []string) {
+	// TODO: Implement this method
+
+	return registeredMiddleweres
 }
 
 // !--
