@@ -1,0 +1,18 @@
+# Kubernates POD Configuration File
+
+# Version of our Core Service
+apiVersion: v1
+
+# It's kind is pod
+kind: Pod
+
+# Metadata Realetd to our POD
+metaData:
+    name: muSonorous-core
+    labels:
+        app: core
+
+# Specs of this POD
+spec:
+    containers:
+        # TODO
