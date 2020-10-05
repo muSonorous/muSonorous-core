@@ -3,9 +3,11 @@ module github.com/muSonorous-core/core
 go 1.15
 
 require (
+	cloud.google.com/go v0.68.0 // indirect
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-playground/validator/v10 v10.3.0 // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
+	github.com/googleapis/gax-go v1.0.3 // indirect
 	github.com/googollee/go-socket.io v1.4.4 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
