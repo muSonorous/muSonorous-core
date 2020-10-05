@@ -12,7 +12,7 @@ type ControllerEntity struct {
 	middleweres []middlewere.Middlewere
 	routeName   string
 	method      string
-	handler     func(c *gin.Context)
+	handler     gin.HandlerFunc
 }
 
 // Array of all the available routes which needs to be registered
