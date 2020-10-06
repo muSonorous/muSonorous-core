@@ -15,7 +15,7 @@ cd core
 ```
 ### To build Dockerfile
 Execute the following command to build and start containarized service
-- use `docker build --tag muSonorousCore:1.0 . up`
+- use ```docker build --tag muSonorousCore:1.0 . up```
 
 
 ### Build without docker
@@ -48,5 +48,5 @@ docker run --name mongo -d mongo
 docker run --name redis -d redis
 ```
 
-### (Note : Don't forget to update `.env.yaml` file file with `hostname`, `username` and `password`)
-### Updating `.env.yaml` is not required if you are running the service using `Dockerfile`
+#### (Note : Don't forget to update `.env.yaml` file file with `hostname`, `username` and `password`)
+#### Updating `.env.yaml` is not required if you are running the service using `Dockerfile`
