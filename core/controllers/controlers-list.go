@@ -1,4 +1,4 @@
-// Register all your controller instances here
+// Package controllers Register all your controller instances here
 package controllers
 
 import (
