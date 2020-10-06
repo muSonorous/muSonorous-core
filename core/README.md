@@ -3,7 +3,10 @@
 
 ### To build Dockerfile
 Execute the following command to build and start containarized service
-- use ```docker build --tag muSonorousCore:1.0 . up```
+
+```
+docker build --tag muSonorousCore:1.0 . up
+```
 
 ### Build without docker
 #### To build without docker use 
