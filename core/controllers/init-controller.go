@@ -43,10 +43,12 @@ func (c *RestController) AddGroup(groupName string) *gin.RouterGroup {
 	return c.routeGroups[groupName]
 }
 
+// Internal method that Registers all the controller Handlers dynamicaly from routes array
 func (c *RestController) initRoutes() {
 
+	// Iterate over all the route and regieter to route group
 	for _, route := range routes {
-		c.engine.GET(route.routeName, route.handler)
+		c.engine.Handle(route.method, route.routeName, route.handler)
 	}
 }
 
