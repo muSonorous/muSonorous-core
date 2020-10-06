@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
+	"github.com/muSonorous-core/core/config"
 	"github.com/muSonorous-core/core/controllers"
 )
 
@@ -28,5 +29,5 @@ func main() {
 	controller := controllers.New()
 
 	// Hardcoding port... TODO: Remove hardcoded and use env file
-	controller.Start(getEnvValue("PORT"))
+	controller.Start(config.GetEnvVal(config.DEV, "PORT"))
 }
